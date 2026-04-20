@@ -1,0 +1,18 @@
+# env
+.env
+
+# credentials
+credentials/
+
+# tokens
+token.json
+
+# output files
+outputs/
+
+# python
+__pycache__/
+*.pyc
+
+# system
+.DS_Store
