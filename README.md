@@ -14,16 +14,23 @@ contest-research/
 ├── README.md                        # 이 파일 (사용 안내)
 ├── run_pipeline.py                  # 자동 리서치 실행 스크립트
 ├── requirements.txt                 # Python 패키지 목록
-├── .env.example                     # 환경변수 설정 예시
-├── credentials/
+├── .env.example                     # 환경변수 설정 예시 (.env는 gitignore)
+├── .gitignore
+├── credentials/                     # gitignore — 커밋되지 않음
 │   ├── oauth.json                   # Google OAuth 클라이언트 키
 │   └── token.json                   # 로그인 후 자동 생성 — 건드리지 마세요
 ├── prompts/
-│   ├── research_prompt.md           # 수동 리서치용 프롬프트 모음 (전 유형 공용)
-│   └── contest_idea_prompt.md       # 공모전 기획 전문가 프롬프트
-├── outputs/                         # 자동 생성된 MD/JSON 결과물 저장
+│   ├── research_prompt.md           # 수동 리서치 프롬프트 (전 유형 공용)
+│   ├── contest_idea_prompt.md       # 공모전 기획 전문가 프롬프트
+│   ├── contest_scoring_prompt.md    # 아이디어 채점 프롬프트
+│   ├── contest_ppt_prompt.md        # 발표자료 작성 프롬프트
+│   └── contest_scv_prompt.md        # CSV 변환 프롬프트
+├── outputs/                         # gitignore — 자동 생성 결과물 저장
+│   ├── idea_*.json / idea_*.md      # 아이디어 리서치 결과
+│   └── score_*.json                 # 채점 결과
 └── data/
-    └── ideas_master.csv             # 전체 아이디어 누적 관리 시트
+    ├── ideas_master.csv             # 전체 아이디어 누적 관리 시트
+    └── ideas_sheet_ready.csv        # 초기 아이디어 샘플
 ```
 
 ---
