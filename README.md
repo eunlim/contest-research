@@ -24,7 +24,7 @@ contest-research/
 │   ├── contest_idea_prompt.md       # 공모전 기획 전문가 프롬프트
 │   ├── contest_scoring_prompt.md    # 아이디어 채점 프롬프트
 │   ├── contest_ppt_prompt.md        # 발표자료 작성 프롬프트
-│   └── contest_scv_prompt.md        # CSV 변환 프롬프트
+│   └── contest_csv_prompt.md        # CSV 변환 프롬프트
 ├── outputs/                         # gitignore — 자동 생성 결과물 저장
 │   ├── idea_*.json / idea_*.md      # 아이디어 리서치 결과
 │   └── score_*.json                 # 채점 결과
